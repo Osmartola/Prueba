@@ -1,0 +1,79 @@
+\documentclass[11pt,letterpaper]{article}%------Paquetería
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage{amsmath,amssymb,amsfonts,latexsym}
+\usepackage[T1]{fontenc}
+\everymath{\displaystyle}
+\usepackage[total={16.59cm,22.94cm},top=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{graphicx,cancel,subfigure,booktabs}
+\setcounter{secnumdepth}{3}%Para enumerar las susubsecciones
+\usepackage[spanish,es-tabla,es-noquoting]{babel}%Idioma español
+%--------------------------------------Simular letra arial
+\usepackage{helvet}
+\renewcommand*\familydefault{\sfdefault}
+%---------------------------------------------------------
+
+%--------------------------------gráficos nativos en LaTeX
+\usepackage{tikz,tkz-tab}%
+\usetikzlibrary{quotes,angles,shapes.geometric,calc}
+%---------------------------------------------------------
+\usepackage{array,multirow,multicol,color,fancyhdr,enumerate,titlesec}
+%---------------------------------Para diagramas de llaves
+\usepackage{schemata}
+\newcommand\diagram[2]{\schema{\schemabox{#1}}{\schemabox{#2}}}
+%---------------------------------------------------------
+\addto\captionsspanish{\def\refname{}}%Para que no aparezca la palabra Referencias en la bibliografía
+%---------------------------------------Personaliza el título de las tablas y figuras
+\usepackage[centerlast,small,sf]{caption2}
+\renewcommand{\captionlabeldelim}{.}
+%---------------------------------------------------------
+\renewcommand{\baselinestretch}{1.1}
+% indicar separación de sílabas que el latex no corte bien
+\hyphenation{con-tra-ejem-plo con-tra-ejem-plos des-crip-ti-vo
+pro-pues-ta pro-pues-tas va-lo-ra-ti-vas mo-de-li-za
+con-tra-ejem-plos res-pec-ti-va-men-te cla-ses cons-trui-da
+si-guien-tes de-sa-rro-llo cul-tu-ra-les bien pla-ni-fi-ca-se
+ima-gen glo-bal ana-li-za-das sa-tis-fac-cio-nes res-pues-ta
+ti-pi-ca-li-dad fi-gu-ran va-ria-bles va-ria-ble des-pla-zar-se
+co-rre-la-cio-na}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.9pt}
+\setlength{\parskip}{1.5 em}%Espacio entre párrafos
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{1}
+
+\newcounter{contador}
+\addtocounter{contador}{1}
+\spanishdecimal{.}
+
+\newtheorem{defi}{Definición}
+\newtheorem{ejem}{Ejemplo}
+\newtheorem{teo}{Teorema}
+
+%------Secciones y subsecciones con tamaño de letra normal
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+%---------------------------------------------------------
+
+%------------------------------Información autor en el pdf
+\usepackage[pdftex]{hyperref}
+\hypersetup{bookmarksopen,bookmarksnumbered,%
+linkcolor=blue,legalpaper,pagebackref,%
+pdftitle=Plan de clase 1,%
+pdfauthor=J. Osmar Artola García \textcopyright,pdfsubject=Plan de clase,%
+pdfkeywords=¿Qué es la estadística?; tipos de estadística; estadística descriptiva; estadística inferemcial; población; muestra; parámetro; estadístico; variables; tipos de variables; nivel de medida de las variables; nivel nominal; nivel ordinal; nivel de razón; nivel de intervalo; métodos para recolectar datos; guía de observación; entrevista; encuesta; cuestinario.}
+%---------------------------------------------------------
+%--------------------------------------------Pie de página
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{\footnotesize{WhatsApp: 8366-6953}}
+\rfoot{\hfill \footnotesize{Messenger: Javier Osmar Artola García}}
+\cfoot{\thepage}
+%\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+%---------------------------------------------------------
+
+\begin{document}
+
+\end{document}
